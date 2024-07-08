@@ -24,20 +24,19 @@ majors = ["مهندسی عمران","مهندسی برق","مهندسی مکان
 marriage = ["مجرد","متاهل"]
 
 alf=[
-    "آ", "ا", "ب", "پ", "ت", "ث", "ج", "چ", "ح", "خ","د", "ذ", "ر", "ز", "ژ", "س", "ش", "ص", "ض",
-    "ط", "ظ", "ع", "غ", "ف", "ق", "ک", "گ", "ل","م", "ن", "و", "هـ", "ی","a"]
+            "آ", "ا", "ب", "پ", "ت", "ث", "ج", "چ", "ح", "خ","د", "ذ", "ر", "ز", "ژ", "س", "ش", "ص", "ض",
+             "ط", "ظ", "ع", "غ", "ف", "ق", "ک", "گ", "ل","م", "ن", "و", "هـ", "ی",]
 
 
 
 
 def is_digit(num: str):
     return all(char.isdigit() for char in num)
-    #all-digit
+   
 
 
 def specialchar(text: str):
     specialcharacter = any(not chr.isalnum() for chr in text)
-    #chr.isalum:ckeck for 1 alphabet
     return specialcharacter
 
 
@@ -88,7 +87,7 @@ class valcourse:
         if Credit <1 or Credit >4:
             raise HTTPException(status_code=400,detail=("Credit is invalid"))
 
-# student------------------
+
 
 
 class valstu:
@@ -172,7 +171,7 @@ class valstu:
                     raise HTTPException(status_code=400, detail="lid is incorrect(separate lids with ',')")
 
 
-# master---------------
+
 class valmaster:
         def lid_check(lid: str):
             if len(lid) != 6 or not is_digit(lid) or specialchar(lid):
