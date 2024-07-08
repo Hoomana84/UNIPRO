@@ -2,13 +2,13 @@ FROM python:3.12.2-slim-bookworm
 
 WORKDIR /var/www
 
-COPY /sql_app/requirements.txt .
+COPY /fast1/requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY sql_app .
+COPY fast1.
 
-CMD ["python3", "main.py"]
+CMD ["fastapi", "main.py"]
 
 
 
