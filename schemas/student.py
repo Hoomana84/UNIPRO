@@ -18,35 +18,35 @@ class Config:
 
 class prstu(student):
     birth: str
-    ids: str  #سریال شناسنامه
+    ids: str 
     borncity: str
     address: str
     postalcode: str
     cphone: str
-    hphone: str      #تلفن ثابت
+    hphone: str     
     department: str
-    major: str    #رشته
+    major: str   
     married: str
     id: str
     scourseids: str
-    lids:  str   # اساتید
+    lids:  str  
 
 
 class studentupdate(BaseModel):
-    stid:Optional[str]=None
-    fname: Optional[str] = None
-    lname: Optional[str] = None
-    father: Optional[str] = None
-    birth:Optional[str]=None
-    ids: Optional[str] = None
-    birncity: Optional[str] = None
-    address: Optional[str] = None
-    postalcode:Optional[str]=None
-    cphone: Optional[str] = None
-    hphone: Optional[str] = None
-    department: Optional[str] = None
-    major: Optional[str]=None
-    married: Optional[str] = None
-    id: Optional[str] = None
-    scpirseids: Optional[str] = None
-    lids: Optional[str] = None
+    stid:str
+    fname: str
+    lname: str
+    father:str
+    birth:str
+    ids:str 
+    birncity: str 
+    address:str 
+    postalcode:str 
+    cphone: str 
+    hphone: str 
+    department: str 
+    major: str 
+    married:str 
+    id: str 
+    scpirseids:str 
+    lids: str 
